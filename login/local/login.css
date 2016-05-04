@@ -1,0 +1,144 @@
+/**
+ ** Login/register box.
+ **/
+
+div.content div.login {
+  width: 100%;
+  
+  padding: 1px;
+  margin-bottom: 8cm;
+
+  background-color: rgb(50, 50, 75);
+  
+  border-left: 4px solid rgb(19, 19, 36);
+  border-right: 4px solid rgb(19, 19, 36);
+  border-top: 1px solid rgb(19, 19, 36);
+  
+  border-radius: 20px 20px;
+}
+
+div.content div.login div.container {
+  margin-top: 2cm;
+  margin-bottom: 1.15cm;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.content div.login input{
+  display: block;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.content div.login input.input {
+  border: 0px solid rgb(0, 0, 0);
+  
+  margin-top: 3px;
+  
+  padding: 2px 4px 2px 4px;
+
+  background-color: rgb(240, 240, 240);
+  color: rgb(25, 25, 25);
+  
+  font-family: 'PT Sans', sans-serif;
+  font-size: 11pt;
+}
+
+div.content div.login input.button {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 11pt;
+  
+  margin-top: 5px;
+  
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px 3px;
+  
+  background-color: rgb(240, 240, 240);
+  color: rgb(25, 25, 25);
+}
+
+div.content div.login input.button:hover {
+  background-color: rgb(235, 235, 215);
+  border-color: rgb(50, 50, 50);
+}
+
+/* Messages */
+
+div.content div.message {
+  font-size: 9pt;
+  letter-spacing: 1px;
+  
+  padding-left: 2%;
+  padding-bottom: 4px;
+  
+  display: block;
+}
+
+div.content div.message#ajaxstatus { 
+  margin-bottom: -1%;
+
+  padding-left: 0;
+  text-align: center;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.content div.message#errormessage {
+  padding-left: 0;
+  
+  text-align: center;
+  color: rgb(233, 84, 84);
+  text-shadow: 0 0 15px rgba(233, 84, 84, 0.75);
+  
+  width: 75%;
+  
+  margin-top: -1%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Shakes when the user has failed to correctly type their username or password three times. */
+
+div.content div.message#forgotpassword {
+  margin-bottom: -6px;
+}
+
+div.content div.message#forgotusername {
+  margin-bottom: -6px;
+}
+
+/* Successful login message box. */
+
+div.content div.container#successbox {
+  display: none;
+  border: 1px solid transparent;
+  
+  height: 1.5cm;
+  
+  margin-top: 2cm;
+  margin-bottom: 2cm;
+}
+
+div.content div.message#loggedin {
+  font-size: 14pt;
+
+  text-align: center;
+  width: 30%;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* reCAPTCHA box. */
+
+div.content div.container div.recaptcha {
+  display: none;
+  
+  margin-top: 8px;
+  
+  margin-left: 37% !important;
+  margin-right: auto !important;
+}

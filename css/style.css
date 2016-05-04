@@ -1,0 +1,291 @@
+html {
+  width: 100%;
+}
+
+body {
+  /* background: rgb(215, 215, 230) url("../resources/gradient.png") no-repeat top left scroll; */
+  background-color: rgb(215, 215, 230);
+  
+  color: rgb(52, 52, 52);
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13pt;
+  
+  margin: 0px;
+}
+
+/**
+ ** Header.
+ **/
+
+div.header {
+  background-color: rgba(220, 220, 220, 0.35);
+  border-bottom: 2px solid rgba(185, 185, 185, 0.55);
+  color: rgba(52, 52, 52, 0.89);
+  
+  padding-top: 3px;
+  padding-left: 8%;
+  padding-right: 8%;
+  
+  font-size: 11pt;
+}
+
+div.header div.element {
+  display: inline;
+}
+
+div.header div.right {
+  float: right;
+  text-align: right;
+  width: 46%;
+}
+
+div.header div.right div.element {
+  padding-left: 4%;
+}
+
+div.header div.left {
+  width: 46%;
+}
+
+div.header div.left div.element {
+  padding-right: 4%;
+}
+
+div.header a {
+  color: rgba(52, 52, 52, 1);
+  text-decoration: none;
+}
+
+div.header a:hover {
+  color: rgba(0, 0, 0, 1);
+  text-decoration: underline;
+}
+
+/* Search box */
+
+div.header form {
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}
+
+div.header input {
+  margin-bottom: 3px;
+  
+  height: 10pt;
+  width: 30%;
+  
+  border: 0px solid rgb(0, 0, 0);
+  
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  
+  background-color: rgb(240, 240, 240);
+  color: rgb(25, 25, 25);
+  
+  font-size: 10pt;
+  font-family: 'PT Sans', sans-serf;
+}
+
+/**
+ ** Content.
+ **/
+
+div.content {
+  width: 84%;
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  
+  color: rgb(255, 255, 255);
+}
+
+/*
+ * General hyperlinks.
+ */
+
+div.content a {
+  text-decoration: none;
+  
+  letter-spacing: 1px;
+  
+  color: rgb(119, 145, 122);
+}
+
+div.content a:hover {
+  text-shadow: 0 0 5px rgba(119, 145, 122, 0.5);
+}
+
+/*
+ * Logo.
+ */
+
+div.content div.logo {
+  padding-left: 2%;
+  margin-bottom: 0.5%;
+  
+  font-family: 'Adamina', serif;
+  font-size: 20pt;
+  color: rgb(0, 0, 0);
+  text-shadow: -1px -1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*
+ * Article.
+ */
+
+div.content div.info div.article {
+  width: 71%;
+  background-color: rgb(50, 50, 75);
+  
+  border-left: 4px solid rgb(19, 19, 36);
+  border-right: 4px solid rgb(19, 19, 36);
+  border-top: 1px solid rgb(19, 19, 36);
+  
+  border-top-left-radius: 20px 20px;
+  border-bottom-left-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  border-top-right-radius: 20px 20px;
+  
+  padding-top: 1%;
+  padding-left: 3%;
+  padding-right: 2%;
+  padding-bottom: 1%;
+  
+ text-align: justify;
+ line-height: 1.15em;
+}
+
+div.content div.info div.article#top {
+  border-top: 0px solid rgb(0, 0, 0);
+  border-top-right-radius: 0px 0px;
+}
+
+div.content div.info div.article div.words {
+  padding-left: 4%;
+}
+
+div.content div.info div.article div.title {
+  padding-left: 2%;
+  
+  font-family: Adamina;
+  font-weight: bold;
+  font-size: 15pt;
+  
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4)
+}
+
+div.content div.info div.article div.title  a { /* Hyperlink in a title */
+  padding-left: 2%;
+  
+  font-family: Adamina;
+  font-weight: bold;
+  font-size: 15pt;
+  
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4)
+}
+
+div.content div.info div.article div.title a:hover {
+  text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.6);
+}
+
+div.content div.info div.article div.commentsbar {
+  border-top: 1px solid rgb(255, 255, 240);
+  
+  font-size: 10pt;
+  font-weight: bold;
+  text-align: right;
+  
+  padding-bottom: 2%;
+}
+
+div.content div.info div.article div.commentsbar div.data {
+  float: right;
+  margin-left: 9%;
+  margin-top: 4px;
+}
+
+div.content div.info div.article div.commentsbar div.data a {
+  color: rgb(255, 255, 255);
+}
+
+div.content div.info div.article div.commentsbar div.data a:hover {
+  text-decoration: underline;
+}
+
+/*
+ * Navigation.
+ */
+
+div.content div.navigation {
+  margin-top: 4px;
+  
+  width: 71%;
+  margin-left: 3%;
+  margin-right: auto;
+}
+
+div.content div.navigation div.prev {
+  width: 46%;
+}
+
+div.content div.navigation div.next {
+  float: right;
+  text-align: right;
+  width: 46%;
+}
+
+/*
+ * Infopane.
+ */
+
+div.content div.info div.infopane {
+  width: 23%;
+  float: right;
+  clear: both;
+  
+  background-color: rgb(50, 50, 75);
+  
+  border-right: 4px solid rgb(19, 19, 36);
+  border-top-right-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  
+  padding-top: 1%;
+  margin-left: 2%;
+  margin-bottom: 1%;
+}
+
+div.content div.info div.infopane div.box {
+  width: 95%;
+  
+  margin-left: 4%;
+  margin-bottom: 5%;
+}
+
+div.content div.info div.infopane div.box div.title {
+  font-weight: bold;
+}
+
+/**
+ ** Footer.
+ **/
+
+div.footer {
+  text-align: center;
+  
+  font-size: 8pt;
+  
+  margin-top: 2cm;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 10px;
+  
+  padding-top: 5px;
+  
+  border-top: 1px solid rgb(40, 40, 40);
+  
+}
